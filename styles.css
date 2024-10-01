@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'TT-Lakes-medium';
+    src: url('fonts/TTLakes-Medium.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT-Lakes-regular';
+    src: url('fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    background-color: rgba(242, 242, 242, 1);
+}
+.container{
+    margin: 0;
+    margin-left: 32px;
+    width: 1056px;
+}
+.header{ 
+    height: 56px;
+    background-color: white;
+}
+.header__text{
+    font-family: 'TT-Lakes-regular', 'Arial', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgba(126, 126, 130, 1);
+    margin: 0;
+    display: flex;
+    height: 56px;
+    align-items: center;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    row-gap: 18px;
+    column-gap: 32px;
+    padding: 0;
+    text-decoration: none;
+    margin-top: 24px;
+}
+.list__item{
+    list-style: none;
+}
+.list__block{
+    height: 72px;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list__block a:first-child{
+    margin-left: 16px;
+}
+.list__block a:last-child{
+    margin-right: 16px;
+}
+.openManager{
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    margin-top: 24px;
+}
+.hiddenManager{
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    margin-top: 46px;
+}
+.hiddenClass{
+    display: none;
+}
+.openManager a, .hiddenManager a {
+    text-decoration: none;
+    font-family: 'TT-Lakes-medium', 'Arial', sans-serif;
+    color: rgba(27, 28, 33, 1);
+    text-align: center;
+    margin-right: 7px;
+}
+.wrapper{
+    width: 100%;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 1120px){
+    .container{
+        width: 100%;
+        margin-left: 24px;
+    }
+}
+@media screen and (max-width: 320px){
+    .hiddenClass{
+        display: block;
+    }
+    .noMobile{
+        display: none;
+    }
+    .list__block{
+        width: 240px;
+        height: 72px;
+        background-color: white;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
+    }
+    .container{
+        margin-left: 0;
+        box-sizing: border-box;
+        padding-left: 20px;
+        width: 100%;
+    }
+    .cards .swiper-pagination{
+        position: static;
+        margin-top: 10px;
+    }
+    .cards .swiper-pagination-bullet{
+        background-color: rgba(151, 151, 151, 1);
+        width: 12px;
+        height: 12px;
+    }
+}
