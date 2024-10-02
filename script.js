@@ -18,5 +18,6 @@ openManager.addEventListener('click', function(){
 })
 new Swiper ('.blocks',{
     pagination: {
-        el: '.swiper-pagination'
+        el: '.swiper-pagination',
+        clickable: true,
     }})
