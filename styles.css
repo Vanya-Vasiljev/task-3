@@ -17,7 +17,7 @@ body{
 }
 .container{
     margin: 0;
-    margin-left: 32px;
+    padding-left: 32px;
     width: 1056px;
 }
 .header{ 
@@ -39,7 +39,6 @@ body{
     grid-template-columns: repeat(auto-fit, 240px);
     row-gap: 18px;
     column-gap: 32px;
-    padding: 0;
     text-decoration: none;
     margin-top: 24px;
 }
@@ -75,22 +74,25 @@ body{
 .hiddenClass{
     display: none;
 }
-.openManager a, .hiddenManager a {
+.add-form__button {
+    padding: 0;
+    border: none;
     text-decoration: none;
     font-family: 'TT-Lakes-medium', 'Arial', sans-serif;
     color: rgba(27, 28, 33, 1);
     text-align: center;
     margin-right: 7px;
+    background-color: transparent;
 }
 .wrapper{
     width: 100%;
     margin-top: 16px;
 }
-
 @media screen and (max-width: 1120px){
     .container{
         width: 100%;
-        margin-left: 24px;
+        padding-left: 24px;
+        box-sizing: border-box;
     }
 }
 @media screen and (max-width: 320px){
@@ -118,11 +120,11 @@ body{
         padding-left: 20px;
         width: 100%;
     }
-    .cards .swiper-pagination{
+    .blocks .swiper-pagination{
         position: static;
         margin-top: 10px;
     }
-    .cards .swiper-pagination-bullet{
+    .blocks .swiper-pagination-bullet{
         background-color: rgba(151, 151, 151, 1);
         width: 12px;
         height: 12px;

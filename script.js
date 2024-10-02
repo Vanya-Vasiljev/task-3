@@ -16,7 +16,7 @@ openManager.addEventListener('click', function(){
     items[9].classList.remove('hiddenClass');
     items[10].classList.remove('hiddenClass');
 })
-new Swiper ('.cards',{
+new Swiper ('.blocks',{
     pagination: {
         el: '.swiper-pagination'
     }})
